@@ -6,7 +6,7 @@ public class Person {
 	int age;
 	String Team;
 	String Gender;
-	
+
 	void intro() {
 		System.out.println(name);
 		System.out.println(age);
