@@ -20,7 +20,7 @@ public class App {
 		info3.name = "Adele";
 		info3.age = 25;
 		info3.Gender = "Female";
-		info3.Team = "Barcelona";
+		info3.Team = "Chelsea";
 
 		Person info4 = new Person();
 		info4.name = "Mike";
