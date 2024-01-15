@@ -30,8 +30,10 @@ public class App {
 		moggy2.sleep();
 		moggy2.print();
 		
+//		Array of Cats
+		
 		Cat[] cats = {moggy, moggy2};
-		for (Cat cat : cats) {
+		for (Cat cat : cats) { //(for each cat of cats)
 			cat.print();
 		}
 		
