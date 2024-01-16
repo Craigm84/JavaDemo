@@ -26,10 +26,7 @@ public class Cat {
 
 	}
 
-	void sleep() {
-		System.out.println("Zzzz");
-	}
-
+//	use moggy.print(); to show on console
 	void print() {
 		System.out.println(name);
 		System.out.println(breed);
@@ -37,6 +34,8 @@ public class Cat {
 		System.out.println(colour);
 	}
 
+//	because private class above, range can be set for age,
+//create setter
 	public void setAge(int age) {
 		if (age >= 0 && age < 30) {
 			this.age = age;
@@ -45,6 +44,7 @@ public class Cat {
 		}
 	}
 
+//	create getter
 	public int getAge() {
 		return this.age;
 	}
