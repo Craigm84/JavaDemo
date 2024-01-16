@@ -1,6 +1,6 @@
 package oop;
 
-public class Cat {
+public class Cat extends Pet {
 
 	private String name;
 	private String breed;
@@ -36,6 +36,7 @@ public class Cat {
 
 //	because private class above, range can be set for age,
 //create setter
+	@Override
 	public void setAge(int age) {
 		if (age >= 0 && age < 30) {
 			this.age = age;
@@ -45,30 +46,37 @@ public class Cat {
 	}
 
 //	create getter
+	@Override
 	public int getAge() {
 		return this.age;
 	}
 
+	@Override
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	@Override
 	public String getName() {
 		return this.name;
 	}
 
+	@Override
 	public void setBreed(String breed) {
 		this.breed = breed;
 	}
 
+	@Override
 	public String getBreed() {
 		return this.breed;
 	}
 
+	@Override
 	public void setColour(String colour) {
 		this.colour = colour;
 	}
 
+	@Override
 	public String getColour() {
 		return this.colour;
 	}

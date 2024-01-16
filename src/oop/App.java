@@ -29,6 +29,13 @@ public class App {
 			cat.print();
 		}
 
+		Dog doggo = new Dog();
+		doggo.setName("Harry");
+		doggo.setBreed("Jack Russell");
+		doggo.setAge(14);
+		doggo.setColour("Brown and White");
+		doggo.print();
+
 	}
 
 }
