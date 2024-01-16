@@ -17,12 +17,14 @@ public class App {
 		moggy2.setAge(20);
 		moggy2.setColour("Black and White");
 
-//		moggy2.sleep();
-//		moggy2.print();
+		Cat moggy3 = new Cat("Stanley", "Domestic Longhair", 14, "White and Brown");
+		Cat moggy4 = new Cat("Amber", "Domestic Shorthair");
+
+		moggy2.print();
 
 //		Array of Cats
 
-		Cat[] cats = { moggy, moggy2 };
+		Cat[] cats = { moggy, moggy2, moggy3, moggy4 };
 		for (Cat cat : cats) { // (for each cat of cats)
 			cat.print();
 		}

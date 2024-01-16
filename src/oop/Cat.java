@@ -7,6 +7,25 @@ public class Cat {
 	private int age;
 	private String colour;
 
+//	the 3 constructors below can be used together
+
+	public Cat(String name, String breed, int age, String colour) {
+		setName(name); // this.name = name; use either
+		setBreed(breed); // this.breed = breed; use either
+		setAge(age); // this.age = age; use either
+		setColour(colour); // this.colour = colour; use either
+
+	}
+
+	public Cat(String name, String breed) {
+		setName(name); // this.name = name; use either
+		setBreed(breed); // this.breed = breed; use either
+	}
+
+	public Cat() {
+
+	}
+
 	void sleep() {
 		System.out.println("Zzzz");
 	}
