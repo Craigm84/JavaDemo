@@ -3,15 +3,13 @@ package garage;
 public class Bike extends Vehicle {
 
 	public Bike(String make, String model, String colour, boolean has2wheels) {
-		setMake(make);
-		setModel(model);
-		setColour(colour);
-		setHas2wheels(true);
+		super(make, model, colour);
+		setHas2wheels(has2wheels);
 
 	}
 
 	public Bike() {
-
+		super();
 	}
 
 	private boolean has2wheels;
@@ -26,11 +24,9 @@ public class Bike extends Vehicle {
 	}
 
 	@Override
-	void print() {
-		System.out.println(getMake());
-		System.out.println(getModel());
-		System.out.println(getColour());
-		System.out.println("Wheels: " + getHas2wheels());
+	public void print() {
+		super.print();
+		System.out.println("2 Wheels: " + getHas2wheels());
 	}
 
 }

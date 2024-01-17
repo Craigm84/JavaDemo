@@ -3,15 +3,13 @@ package garage;
 public class Plane extends Vehicle {
 
 	public Plane(String make, String model, String colour, boolean hasWings) {
-		setMake(make);
-		setModel(model);
-		setColour(colour);
-		setHasWings(true);
+		super(make, model, colour);
+		setHasWings(hasWings);
 
 	}
 
 	public Plane() {
-
+		super();
 	}
 
 	private boolean hasWings;
@@ -26,10 +24,8 @@ public class Plane extends Vehicle {
 	}
 
 	@Override
-	void print() {
-		System.out.println(getMake());
-		System.out.println(getModel());
-		System.out.println(getColour());
+	public void print() {
+		super.print();
 		System.out.println("Has Wings: " + getHasWings());
 	}
 

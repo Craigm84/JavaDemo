@@ -15,10 +15,10 @@ public class App {
 		aero.print();
 		aero2.print();
 
-		Car myCar = new Car("Jaguar", "i-Pace", "Blue", true);
+		Car myCar = new Car("Jaguar", "i-Pace", "Blue", false);
 		myCar.print();
 
-		Car wifeCar = new Car("Jaguar", "i-Pace", "Blue", true);
+		Car wifeCar = new Car("Mercedez", "EQC", "Black", true);
 		wifeCar.print();
 
 		Bike myBike = new Bike("Ducati", "500", "Red", true);

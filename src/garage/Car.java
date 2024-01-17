@@ -3,15 +3,13 @@ package garage;
 public class Car extends Vehicle {
 
 	public Car(String make, String model, String colour, boolean hasBoot) {
-		setMake(make);
-		setModel(model);
-		setColour(colour);
-		setHasBoot(true);
+		super(make, model, colour);
+		setHasBoot(hasBoot);
 
 	}
 
 	public Car() {
-
+		super();
 	}
 
 	private boolean hasBoot;
@@ -26,10 +24,8 @@ public class Car extends Vehicle {
 	}
 
 	@Override
-	void print() {
-		System.out.println(getMake());
-		System.out.println(getModel());
-		System.out.println(getColour());
+	public void print() {
+		super.print();
 		System.out.println("Has Boot : " + getHasBoot());
 	}
 

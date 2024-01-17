@@ -6,14 +6,21 @@ public class Vehicle {
 	private String model;
 	private String colour;
 
-	public Vehicle() {
+	public Vehicle(String make, String model, String colour) {
+		super();
+		setMake(make);
+		setModel(model);
+		setColour(colour);
+	}
 
+	public Vehicle() {
+		super();
 	}
 
 	void print() {
-		System.out.println(make);
-		System.out.println(model);
-		System.out.println(colour);
+		System.out.println("Make: " + getMake());
+		System.out.println("Model: " + getModel());
+		System.out.println("Colour: " + getColour());
 	}
 
 	public String getMake() {
