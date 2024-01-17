@@ -11,21 +11,31 @@ public class App {
 		aero2.setModel("747");
 		aero2.setColour("White");
 		aero2.setHasWings(true);
-
-		aero.print();
-		aero2.print();
+//
+//		aero.print();
+//		aero2.print();
 
 		Car myCar = new Car("Jaguar", "i-Pace", "Blue", false);
-		myCar.print();
+//		myCar.print();
 
 		Car wifeCar = new Car("Mercedez", "EQC", "Black", true);
-		wifeCar.print();
+//		wifeCar.print();
 
 		Bike myBike = new Bike("Ducati", "500", "Red", true);
-		myBike.print();
+//		myBike.print();
 
 		Bike friendsBike = new Bike("Yamaha", "250", "Green", true);
-		friendsBike.print();
+//		friendsBike.print();
 
+		Vehicle vc = new Car("BMW", "4 Series", "White", true);
+		Vehicle vb = new Bike("Suzuki", "Ninja", "Gold", true);
+		Vehicle vp = new Plane("Tornado", "RAF", "Grey", true);
+
+		Vehicle[] vehicles = { vc, vb, vp, friendsBike, myCar, wifeCar, myBike, aero, aero2 };
+
+		for (Vehicle vehicle : vehicles) {
+			vehicle.print();
+		}
 	}
+
 }
