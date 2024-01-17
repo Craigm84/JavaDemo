@@ -18,9 +18,9 @@ public class Vehicle {
 	}
 
 	void print() {
-		System.out.println("Make: " + getMake());
-		System.out.println("Model: " + getModel());
-		System.out.println("Colour: " + getColour());
+		System.out.println(make);
+		System.out.println(model);
+		System.out.println(colour);
 	}
 
 	public String getMake() {

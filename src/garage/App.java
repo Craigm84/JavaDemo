@@ -27,15 +27,25 @@ public class App {
 		Bike friendsBike = new Bike("Yamaha", "250", "Green", true);
 //		friendsBike.print();
 
-		Vehicle vc = new Car("BMW", "4 Series", "White", true);
-		Vehicle vb = new Bike("Suzuki", "Ninja", "Gold", true);
-		Vehicle vp = new Plane("Tornado", "RAF", "Grey", true);
+		Vehicle vCar = new Car("BMW", "4 Series", "White", true);
+		Vehicle vBike = new Bike("Suzuki", "Ninja", "Gold", true);
+		Vehicle vPlane = new Plane("Tornado", "RAF", "Grey", true);
 
-		Vehicle[] vehicles = { vc, vb, vp, friendsBike, myCar, wifeCar, myBike, aero, aero2 };
+		Vehicle[] vehicles = { vCar, vBike, vPlane, friendsBike, myCar, wifeCar, myBike, aero, aero2 };
 
 		for (Vehicle vehicle : vehicles) {
 			vehicle.print();
 		}
+
+		Garage myGarage = new Garage("The World is a Garage");
+		myGarage.park(new Car("Ford", "Escort", "Orange", true));
+		myGarage.park(vBike);
+		myGarage.park(vPlane);
+		myGarage.collect(vBike);
+		myGarage.park(wifeCar);
+
+		myGarage.print();
+
 	}
 
 }
