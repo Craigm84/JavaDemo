@@ -7,7 +7,6 @@ public class Garage {
 
 	public Garage(String name) {
 		super();
-
 	}
 
 	public void park(Vehicle vehicle) {
@@ -18,9 +17,23 @@ public class Garage {
 		vehs.remove(vehicle);
 	}
 
-	public void print() {
-		for (Vehicle vehicle : vehs) {
-			vehicle.print();
-		}
+	@Override
+	public String toString() {
+		return "Garage [Vehicles=" + vehs + "]";
 	}
+
+	public void fix() {
+		int sum = 0;
+		for (Vehicle vBill : vehs) {
+			System.out.println("Bill: " + vBill.calcBill());
+			sum = sum + vBill.calcBill();
+		}
+		System.out.println("Total Bill: " + sum);
+	}
+
+//	public void print() {
+//		for (Vehicle vehs : vehs) {
+//			vehs.print();
+//		}
+//	}
 }

@@ -12,6 +12,11 @@ public class Car extends Vehicle {
 		super();
 	}
 
+	@Override
+	public int calcBill() {
+		return 500;
+	}
+
 	private boolean hasBoot;
 
 	public boolean getHasBoot() {
@@ -24,9 +29,15 @@ public class Car extends Vehicle {
 	}
 
 	@Override
-	public void print() {
-		super.print();
-		System.out.println("Has Boot : " + getHasBoot());
+	public String toString() {
+		return "Car [Has Boot=" + hasBoot + ", Make()=" + getMake() + ", Model()=" + getModel() + ", Colour()="
+				+ getColour() + "]";
 	}
+
+//	@Override
+//	public void print() {
+//		super.print();
+//		System.out.println("Has Boot : " + getHasBoot());
+//	}
 
 }

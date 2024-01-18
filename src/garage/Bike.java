@@ -12,6 +12,11 @@ public class Bike extends Vehicle {
 		super();
 	}
 
+	@Override
+	public int calcBill() {
+		return 100;
+	}
+
 	private boolean has2wheels;
 
 	public boolean getHas2wheels() {
@@ -24,9 +29,15 @@ public class Bike extends Vehicle {
 	}
 
 	@Override
-	public void print() {
-		super.print();
-		System.out.println("2 Wheels: " + getHas2wheels());
+	public String toString() {
+		return "Bike [Has 2 Wheels=" + has2wheels + ", Make()=" + getMake() + ", Model()=" + getModel() + ", Colour()="
+				+ getColour() + "]";
 	}
+
+//	@Override
+//	public void print() {
+//		super.print();
+//		System.out.println("2 Wheels: " + getHas2wheels());
+//	}
 
 }

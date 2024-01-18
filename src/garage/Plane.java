@@ -12,6 +12,11 @@ public class Plane extends Vehicle {
 		super();
 	}
 
+	@Override
+	public int calcBill() {
+		return 1000;
+	}
+
 	private boolean hasWings;
 
 	public boolean getHasWings() {
@@ -24,9 +29,15 @@ public class Plane extends Vehicle {
 	}
 
 	@Override
-	public void print() {
-		super.print();
-		System.out.println("Has Wings: " + getHasWings());
+	public String toString() {
+		return "Plane [Has Wings=" + hasWings + ", Make()=" + getMake() + ", Model()=" + getModel() + ", Colour()="
+				+ getColour() + "]";
 	}
+
+//	@Override
+//	public void print() {
+//		super.print();
+//		System.out.println("Has Wings: " + getHasWings());
+//	}
 
 }
