@@ -30,8 +30,8 @@ public class Car extends Vehicle {
 
 	@Override
 	public String toString() {
-		return "Car [Has Boot=" + hasBoot + ", Make()=" + getMake() + ", Model()=" + getModel() + ", Colour()="
-				+ getColour() + "]";
+		return "Car id=  " + getId() + ", Has Boot=" + hasBoot + ", Make=" + getMake() + ", Model=" + getModel()
+				+ ", Colour=" + getColour() + "]";
 	}
 
 //	@Override

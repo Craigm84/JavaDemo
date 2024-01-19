@@ -30,8 +30,8 @@ public class Bike extends Vehicle {
 
 	@Override
 	public String toString() {
-		return "Bike [Has 2 Wheels=" + has2wheels + ", Make()=" + getMake() + ", Model()=" + getModel() + ", Colour()="
-				+ getColour() + "]";
+		return "Bike [id=  " + getId() + ", Has 2 Wheels=" + has2wheels + ", Make=" + getMake() + ", Model="
+				+ getModel() + ", Colour=" + getColour() + "]";
 	}
 
 //	@Override
